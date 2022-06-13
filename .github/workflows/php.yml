@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Report PHP version
         run: php -v
       - name: Run a one-line script
@@ -15,7 +15,7 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v1
         env:
-          TEST_NAME: Scarlett
+          TEST_NAME: HoanChuong
         with:
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
