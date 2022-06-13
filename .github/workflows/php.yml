@@ -5,25 +5,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Report PHP version
-        run: php -v
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a other script
-        run: echo Hello, Mr.Hoan!
-
-      - uses: php-actions/composer@v5
-        with:
-          ssh_key: ${{ secrets.ssh_key }}
-          ssh_key_pub: ${{ secrets.ssh_key_pub }}
-          php_version: 7.2
+      # - name: Report PHP version
+        # run: php -v
+      # - name: Run a one-line script
+        # run: echo Hello, world!
+      # - name: Run a other script
+        # run: echo Hello, Mr.Hoan!
       
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v1
-        env:
-          TEST_NAME: HoanChuong
+        uses: php-actions/phpunit@v3
+        # env:
+          # TEST_NAME: HoanChuong
         with:
-          bootstrap: vendor/autoload.php
+          # bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
-          args: --coverage-text
+          memory_limit: 256M
+          # args: --coverage-text
 
