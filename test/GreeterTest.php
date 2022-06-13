@@ -1,6 +1,4 @@
 <?php
-namespace Test;
-
 use Greeter;
 
 class GreeterTest extends \PHPUnit\Framework\TestCase {
@@ -12,16 +10,16 @@ class GreeterTest extends \PHPUnit\Framework\TestCase {
 		);
 	}
 
-	public function testGreeterUsesName() {
-		$greeter = new Greeter();
+	// public function testGreeterUsesName() {
+		// $greeter = new Greeter();
 
-		self::assertStringContainsString(
-			"Hello, Cody",
-			$greeter->greet("Cody")
-		);
-		self::assertStringContainsString(
-			"Hello, Sarah",
-			$greeter->greet("Sarah")
-		);
-	}
+		// self::assertStringContainsString(
+			// "Hello, Cody",
+			// $greeter->greet("Cody")
+		// );
+		// self::assertStringContainsString(
+			// "Hello, Sarah",
+			// $greeter->greet("Sarah")
+		// );
+	// }
 }
