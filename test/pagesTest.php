@@ -5,6 +5,6 @@ class PagesTest extends PHPUnit_Framework_TestCase
     public function testRenderReturnsHelloWorld()
     {
         $pages = new \controllers\Pages();
-        echo $pages->render();
+        $pages->render();
     }
 }
