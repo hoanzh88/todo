@@ -11,6 +11,7 @@ jobs:
         run: echo Hello, world!
       - name: Run a other script
         run: echo Hello, Mr.Hoan!
+        uses: php-actions/composer@v5
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v1
         env:
