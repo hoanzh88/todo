@@ -1,7 +1,7 @@
 <?php
-namespace App\Test;
+namespace Test;
 
-use App\EnvGreeter;
+use EnvGreeter;
 
 class EnvGreeterTest extends \PHPUnit\Framework\TestCase {
 	/**

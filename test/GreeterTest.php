@@ -1,7 +1,7 @@
 <?php
-namespace App\Test;
+namespace Test;
 
-use App\Greeter;
+use Greeter;
 
 class GreeterTest extends \PHPUnit\Framework\TestCase {
 	public function testGreeterSaysHello() {
