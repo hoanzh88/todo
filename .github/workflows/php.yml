@@ -11,4 +11,12 @@ jobs:
         run: echo Hello, world!
       - name: Run a other script
         run: echo Hello, Mr.Hoan!
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v2
+        env:
+          TEST_NAME: Scarlett
+        with:
+          bootstrap: vendor/autoload.php
+          configuration: test/phpunit.xml
+          args: --coverage-text
 
